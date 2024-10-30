@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🎉 ACHOU QUE IA ME CANCELAR? 🎉</title>
+    <style>
+        /* Estilo Geral */
+        body {
+            background: linear-gradient(45deg, #ffccff, #ff9966);
+            font-family: "Comic Sans MS", sans-serif;
+            text-align: center;
+            color: #000;
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* Evita scroll */
+            position: relative;
+            /* Para o botão escondido */
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #ff3399;
+            text-shadow: 3px 3px 5px #fff;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .gif-container {
+            margin-top: 20px;
+            height: 450px;
+            /* Altura ajustada para 450px */
+            width: 800px;
+            /* Largura ajustada para 800px */
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Fundo branco com leve transparência */
+            border: 3px dashed #ff3399;
+            /* Borda pontilhada colorida */
+            border-radius: 15px;
+            /* Bordas arredondadas */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            /* Sombra para destacar */
+            overflow: hidden;
+            /* Para esconder possíveis excessos do GIF */
+        }
+
+        .gif-container img {
+            width: 100%;
+            /* Preenche o box */
+            height: auto;
+            /* Mantém a proporção do GIF */
+            max-height: 100%;
+            /* Garante que não ultrapasse a altura do box */
+            object-fit: cover;
+            /* Mantém a proporção do GIF */
+            border-radius: 10px;
+            /* Bordas arredondadas para o GIF */
+        }
+
+        /* Botão escondido */
+        .hidden-button {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            top: -9999px;
+            /* Esconde o botão fora da tela */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ACHOU QUE IA ME CANCELAR?</h1>
+
+    <div class="gif-container">
+        <img src="https://i0.wp.com/parafraseandolivros.com.br/wp-content/uploads/2019/06/achou-errado.gif"
+            alt="GIF Engraçado">
+    </div>
+
+    <!-- Botão escondido que redireciona para o link -->
+    <a href="http://x.com/brunex92" class="hidden-button" target="_blank"></a>
+
+    <script>
+        // Redireciona para o link quando o usuário clica na página
+        document.body.addEventListener('click', function () {
+            window.location.href = 'http://x.com/brunex92';
+        });
+    </script>
+
+</body>
+
+</html>
